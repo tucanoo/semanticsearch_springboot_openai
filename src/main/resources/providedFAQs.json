@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How can I determine the number of solar panels I'll need for my house?",
+    "answer": "The number of solar panels required depends on your energy consumption, your location's sunlight hours, and the wattage of the panels. Use our online calculator or contact our team for a detailed assessment."
+  },
+  {
+    "question": "I've heard solar systems can decrease my utility bill. Is this accurate?",
+    "answer": "Absolutely! Once installed, solar systems can significantly reduce, if not eliminate, your electricity bills depending on the system's size and your energy usage. Many users also benefit from net metering, earning credits for excess energy produced."
+  },
+  {
+    "question": "What happens during periods when the sun isn't shining?",
+    "answer": "Your solar system stores excess energy in batteries for use during nighttime or cloudy days. Additionally, you remain connected to the grid, ensuring continuous power even when your system isn't generating electricity."
+  },
+  {
+    "question": "Can inclement weather damage my solar panels?",
+    "answer": "Our panels are designed to withstand environmental stress, including rain, hail, and wind. However, in the event of extreme weather conditions, it's advisable to have them inspected for potential damage."
+  },
+  {
+    "question": "Is it possible to monitor my solar energy production in real-time?",
+    "answer": "Yes! Our GreenTech app allows you to track energy production, consumption, and storage in real-time. You can also receive performance reports and maintenance alerts."
+  },
+  {
+    "question": "I'm considering a roof replacement in the next year. Should I wait to install solar panels?",
+    "answer": "It's generally advisable to replace your roof before installing solar panels to avoid additional costs of removing and reinstalling the panels. Ensure your new roof is compatible with solar installations."
+  },
+  {
+    "question": "How often do I need to service or maintain my solar system?",
+    "answer": "Solar systems require minimal maintenance. However, it's recommended to inspect them annually for dirt, debris, or potential wear and tear. Our company offers yearly check-ups and cleaning services."
+  },
+  {
+    "question": "Will my property's value increase with a solar installation?",
+    "answer": "Many studies indicate that homes equipped with solar energy systems have higher property values and sell more quickly than non-solar homes, making it a sound investment."
+  },
+  {
+    "question": "Is there any financial aid or incentive to go solar?",
+    "answer": "Many governments and states offer tax credits, rebates, and incentives for transitioning to solar energy. Check with local authorities or our financing team for specific programs in your area."
+  },
+  {
+    "question": "I live in an area with frequent cloudy days. Is solar still a viable option?",
+    "answer": "Solar panels can still generate electricity on cloudy days, albeit at a reduced rate. It's essential to consider the overall annual sunlight hours in your area. Our team can provide a detailed analysis to determine the system's efficiency in varying weather conditions."
+  }
+]
