@@ -3,7 +3,6 @@ package com.tucanoo.solarpanel_openai_semantic_search;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.tucanoo.solarpanel_openai_semantic_search.data.model.FAQ;
 import com.tucanoo.solarpanel_openai_semantic_search.services.FAQService;
-import com.tucanoo.solarpanel_openai_semantic_search.services.OpenAIService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +18,6 @@ class FAQServiceTests {
 
     @Autowired
     FAQService faqService;
-
-    @Autowired
-    OpenAIService openAIService;
 
     @Test
     void testSearchReturnsGoodResult() throws JsonProcessingException {
