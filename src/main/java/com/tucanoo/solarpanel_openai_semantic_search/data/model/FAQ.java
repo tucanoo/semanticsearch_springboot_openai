@@ -1,16 +1,17 @@
 package com.tucanoo.solarpanel_openai_semantic_search.data.model;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
 public class FAQ {
-    private Long id;
     private String question;
     private String answer;
+
+    @ToString.Exclude
     private float[] embedding;
 
-    public FAQ(Long id, String question, String answer) {
-        this.id = id;
+    public FAQ(String question, String answer) {
         this.question = question;
         this.answer = answer;
     }

@@ -34,14 +34,16 @@ public class FAQService {
         generateEmbeddingsJson();
     }
 
-    public List<FAQ> searchFAQUsingInternalSearch(float[] prompt) {
+    public List<FAQ> searchFAQUsingInternalSearch(String prompt) throws JsonProcessingException {
+
+        float[] embeddingForPrompt = openAIService.getEmbeddings(prompt);
 
         List<float[]> faqEmbeddings = new ArrayList<>();
         for (FAQ faq : faqList) {
             faqEmbeddings.add(faq.getEmbedding());
         }
 
-        List<Integer> mostSimilarIndices = internalSearchService.findMostSimilarEmbeddings(prompt, faqEmbeddings, 3);
+        List<Integer> mostSimilarIndices = internalSearchService.findMostSimilarEmbeddings(embeddingForPrompt, faqEmbeddings, 3);
 
         List<FAQ> topFAQs = new ArrayList<>();
         for (int index : mostSimilarIndices) {

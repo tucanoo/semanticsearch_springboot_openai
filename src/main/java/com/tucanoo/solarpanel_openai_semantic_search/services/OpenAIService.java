@@ -19,7 +19,6 @@ public class OpenAIService {
     private String apiKey;
 
     private static final String OPENAI_EMBEDDINGS_URL = "https://api.openai.com/v1/embeddings";
-    private static final String OPENAI_MODERATION_URL = "https://api.openai.com/v1/moderations";
 
     public float[] getEmbeddings(String input) throws JsonProcessingException {
         RestTemplate restTemplate = new RestTemplate();
