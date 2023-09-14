@@ -11,10 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 @SpringBootTest
-public class FAQServiceTests {
+class FAQServiceTests {
 
     @Autowired
     FAQService faqService;
@@ -23,8 +21,9 @@ public class FAQServiceTests {
     OpenAIService openAIService;
 
     @Test
-    public void testSearchReturnsGoodResult() throws JsonProcessingException {
+    void testSearchReturnsGoodResult() throws JsonProcessingException {
         // given    - a question and the embedding for the question
+        // this particular question should touch several of the FAQs relating to cost and weather
         String question = "I've been thinking about upgrading my roof soon, but I'm also interested in lowering my electricity bills " +
             "and understanding how weather might affect my investment. What should I consider?";
 
@@ -35,12 +34,13 @@ public class FAQServiceTests {
 
         // then - we should receive the top 3 most relevant results
         Assertions.assertNotNull(result);
-        Assertions.assertTrue(result.size() == 3);
+        Assertions.assertEquals(3, result.size());
     }
 
     @Test
-    public void testIrrelevantSearchReturnsNothing() throws JsonProcessingException {
+    void testIrrelevantSearchReturnsNothing() throws JsonProcessingException {
         // given    - a question and the embedding for the question
+        // This question is significantly unrelated to solar panels, so we shouldn't see any related results
         String question = "I can never remember port from starboard, can you remind me which is which?";
 
         float[] embeddingForQuestion = openAIService.getEmbeddings(question);

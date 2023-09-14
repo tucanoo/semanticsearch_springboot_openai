@@ -3,7 +3,6 @@ package com.tucanoo.solarpanel_openai_semantic_search.services;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.tucanoo.solarpanel_openai_semantic_search.data.model.FAQ;
 import lombok.RequiredArgsConstructor;
 import org.json.JSONArray;
 import org.json.JSONObject;

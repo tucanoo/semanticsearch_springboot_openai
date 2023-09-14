@@ -11,7 +11,7 @@ public class InternalSearchService {
 
     private static final double SIMILARITY_THRESHOLD = 0.8; // Just an example threshold to limit the results
 
-    public static List<Integer> findMostSimilarEmbeddings(float[] queryEmbedding, List<float[]> faqEmbeddings, int topResults) {
+    public List<Integer> findMostSimilarEmbeddings(float[] queryEmbedding, List<float[]> faqEmbeddings, int topResults) {
         List<Double> similarities = new ArrayList<>();
         for (float[] faqEmbedding : faqEmbeddings) {
             double similarity = cosineSimilarity(queryEmbedding, faqEmbedding);
@@ -31,7 +31,7 @@ public class InternalSearchService {
         return mostSimilarIndices.subList(0, Math.min(topResults, mostSimilarIndices.size()));
     }
 
-    private static double cosineSimilarity(float[] vectorA, float[] vectorB) {
+    private double cosineSimilarity(float[] vectorA, float[] vectorB) {
         double dotProduct = 0.0;
         double normA = 0.0;
         double normB = 0.0;
